@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tarjetaTitulo {
+  color: orangered;
+  font-size: 20px;
+}
+
+.tarjetaInformacion {
+  display: flex;
+}
+
+.tarjetaInformacion div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.productosLogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.producto:hover {
+  transform: scale(2);
+  flex: 25%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  background-color: red;
+  grid-area: header;
+  margin: 10px;
+  font-size: large;
+  padding: 10px;
+  background-image: url(img/alicorp.png);
+  background-repeat: no-repeat;
+  background-position: 26vw;
+  background-size: 85px;
+}
+.header__titulo {
+  color: rebeccapurple;
+  margin-top: 10 px;
+  margin-left: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.header__menuLista {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Roboto;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: whitesmoke;
+  grid-area: header;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: header;
+  margin: 10px;
+  font-size: large;
+  padding: 10px;
+  background-color: orange;
+  background-image: linear-gradient(red, orange);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer__piepagina {
+  color: brown;
+  font-size: 15px;
+}
+.footer__menuRedes {
+  color: royalblue;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+footer img {
+  width: 30px;
+  align-items: center;
+  align-content: space-around;
+}
+
+.titulo {
+  font-size: 50px;
+  background-color: white;
+  grid-area: header;
+  margin: 10px;
+  font-size: x-large;
+  padding: 10px;
+}
+
+th {
+  color: blue;
+}
+
+nav ul li {
+  font-family: Roboto;
+  margin: 10px;
+  list-style-type: none;
+  background-color: violet;
+  border: black solid;
+  padding: 10px;
+  transition: all;
+}
+
+nav ul li:hover {
+  background-color: yellow;
+}
+
+li {
+  color: purple;
+}
+
+td {
+  color: red;
+}
+
+div {
+  color: blue;
+}
+
+ul li {
+  color: green;
+  font-family: roboto;
+}
+
+body {
+  font-size: 15px;
+  font-family: Roboto;
+  background-position: top right;
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+h4 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.talign {
+  color: red;
+  text-align: left;
+}
+
+.seccionConocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vistaAlicorp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.fondo {
+  height: 100vh;
+  background-color: greenyellow;
+  background-image: linear-gradient(red, greenyellow);
+  background-image: url(img/Nosotros.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-item {
+  height: 620px;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-outline-success {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-success:hover {
+  color: black;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.btn--red1 {
+  background-color: skyblue;
+  background-image: url(img/Mapa.JPG);
+  margin: 10px;
+  font-size: large;
+  padding: 10px;
+  height: 400px;
+  width: 500px;
+  border: 2px solid #333;
+  line-height: 200px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 425px) {
+  .productosLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background-image: url(img/alicorp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
